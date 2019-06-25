@@ -1,6 +1,6 @@
 from Algs.SortHelp import *
 
-class SelectionSort:
+class ElementarySorts:
     def execute_selection_sort(arr):
         if arr == None:
             raise ValueError("Can't sort null")

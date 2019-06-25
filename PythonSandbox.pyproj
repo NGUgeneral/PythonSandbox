@@ -21,23 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Algs\SelectionSort.py">
+    <Compile Include="Algs\ElementarySorts.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Algs\SortHelp.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonSandbox.py" />
-    <Compile Include="Tutorial\Parent.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Tutorial\TutorialMaster.py">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Algs\" />
-    <Folder Include="Tutorial\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
