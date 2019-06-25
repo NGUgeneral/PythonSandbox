@@ -15,3 +15,6 @@ def is_sorted(arr):
             return False
         i+=1
     return True
+
+def print_arr(arr):
+    print(", ".join(map(str, arr)))
