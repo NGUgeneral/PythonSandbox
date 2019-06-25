@@ -30,3 +30,22 @@ class ElementarySorts:
                     break
             i+=1
         return arr
+
+    def execute_shell_sort(arr):
+        if precheck_arr(arr):
+            return arr
+        h=1
+        while h<len(arr)//3:
+            h = 3*h+1
+        while h>=1:
+            i = h
+            while i < len(arr):
+
+                j = i
+                while j>=h:
+                    if arr[j]<arr[j-h]:
+                        exchange(arr, j, j-h)
+                    j-=1
+                i+=1
+            h=h//3
+        return arr
