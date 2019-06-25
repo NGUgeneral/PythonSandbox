@@ -24,6 +24,9 @@
     <Compile Include="Algs\ElementarySorts.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Algs\Logic.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Algs\SortHelp.py">
       <SubType>Code</SubType>
     </Compile>
