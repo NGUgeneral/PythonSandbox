@@ -6,11 +6,10 @@ def exchange(arr, i, j):
 def is_sorted(arr):
     if arr == None:
         return False
-    lim = len(arr)
-    if lim < 2:
+    if len(arr) < 2:
         return True
     i = 1
-    while i < lim:
+    while i < len(arr):
         if arr[i] < arr[i - 1]:
             return False
         i+=1
@@ -18,3 +17,10 @@ def is_sorted(arr):
 
 def print_arr(arr):
     print(", ".join(map(str, arr)))
+
+def precheck_arr(arr):
+    if arr == None:
+        raise ValueError("Can't sort null")
+    if len(arr)<2:
+        return True
+    return False
