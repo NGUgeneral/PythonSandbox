@@ -1,3 +1,5 @@
+import random
+
 def exchange(arr, i, j):
     temp = arr[i]
     arr[i] = arr[j]
@@ -24,3 +26,9 @@ def precheck_arr(arr):
     if len(arr)<2:
         return True
     return False
+
+def knuth_shuffle(arr):
+    for i in range(len(arr)):
+        exchange(arr, i, random.randint(i, len(arr) - 1))
+        i+=1
+    return arr
