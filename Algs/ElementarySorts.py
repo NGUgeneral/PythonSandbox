@@ -1,6 +1,14 @@
 from Algs.SortHelp import *
 
 class ElementarySorts:
+    def sort(arr, strategy):
+        if(strategy == "selection"):
+            ElementarySorts.execute_selection_sort(arr)
+        elif(strategy == "insertion"):
+            ElementarySorts.execute_insertion_sort(arr)
+        elif(strategy == "shell"):
+            ElementarySorts.execute_shell_sort(arr)
+
     def execute_selection_sort(arr):
         if precheck_arr(arr):
             return arr
