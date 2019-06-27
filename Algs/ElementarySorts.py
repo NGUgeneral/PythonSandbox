@@ -48,7 +48,6 @@ class ElementarySorts:
         while h>=1:
             i = h
             while i < len(arr):
-
                 j = i
                 while j>=h:
                     if arr[j]<arr[j-h]:

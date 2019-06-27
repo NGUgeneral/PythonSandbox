@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Algs\ClassicSorts.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Algs\ElementarySorts.py">
       <SubType>Code</SubType>
     </Compile>
